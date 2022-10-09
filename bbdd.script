@@ -1,0 +1,13 @@
+USE demo;
+
+CREATE TABLE IF NOT EXISTS person {
+		id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+		name VARCHAR(255),	
+		surname VARCHAR(255),	
+		email VARCHAR(255) NOT NULL UNIQUE,	
+		telephone VARCHAR(255)
+};
+
+
+INSERT INTO persons (name, surname, email, telephone) 
+VALUES ("Alexia", "Déniz Collazos", "alexiadeniz@gmail.com", "668541548");
